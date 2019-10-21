@@ -1,4 +1,4 @@
-const request = require("request");
+const request = require('request');
 
 qEndpoint = "https://collectionapi.metmuseum.org/public/collection/v1/search?q=";
 idEndpoint = "https://collectionapi.metmuseum.org/public/collection/v1/objects/";

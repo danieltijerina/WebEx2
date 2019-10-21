@@ -22,9 +22,7 @@ app.get('/students/:id', function (req, res) {
 
 app.get('/met', function (req, res) {
     q = req.query.search;
-    console.log(q);
     met.getQ(q, function (error, response) {
-        console.log(response);
         if (error) {
             return res.send(error);
         } else {

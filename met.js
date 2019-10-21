@@ -5,7 +5,6 @@ idEndpoint = "https://collectionapi.metmuseum.org/public/collection/v1/objects/"
 
 const getQ = function (query, callback) {
     const qURL = qEndpoint + query;
-    console.log(qURL);
 
     request({ url: qURL, json: true }, function (err, response) {
         if (err) {
@@ -20,7 +19,6 @@ const getQ = function (query, callback) {
 
 const getObject = function (id, callback) {
     const objectURL = idEndpoint + id;
-    console.log(objectURL);
     request({ url: objectURL, json: true }, function (err, response) {
         if (err) {
             callback(err);
